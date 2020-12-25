@@ -1,3 +1,7 @@
+const log = function(stuff) {
+    console.log(stuff);
+}
+
 //game values
 let min = 1,
     max = 10,
@@ -15,5 +19,13 @@ const game = document.querySelector('#game'),
 //assign UI min/max
 minNum.textContent = min;
 maxNum.textContent = max;
-      
+
+//listen for guess
+guessBtn.addEventListener('click', function(){
+   let guess = parseInt(guessInpit.value);
+   log(guess);
+   //validate
+
+    
+});
 
