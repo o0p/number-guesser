@@ -1,5 +1,5 @@
-const log = function(stuff) {
-    console.log(stuff);
+const log = function(i) {
+    console.log(i);
 }
 
 //game values
@@ -25,7 +25,14 @@ guessBtn.addEventListener('click', function(){
    let guess = parseInt(guessInpit.value);
    log(guess);
    //validate
-
-    
+   if(isNaN(guess) || guess < min || guess > max){
+       setMessage(`Please enter a number between ${min} and ${max}`, 'red');
+   }    
 });
+
+//set message
+function setMessage(msg, color) {
+    message.style.color = color;
+    message.textContent = msg;
+}
 
