@@ -12,5 +12,8 @@ const game = document.querySelector('#game'),
       guessInpit = document.querySelector('#guess-input'),
       message = document.querySelector('.message');
       
+//assign UI min/max
+minNum.textContent = min;
+maxNum.textContent = max;
       
 
